@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D9D4D0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: black;
+    padding: 5px;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline;
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+nav li:hover {
+    background-color: #8C0B16;
+}
+
+nav ul:hover>.subnav {
+    display: block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.h1 {
+    letter-spacing: 0.1em;
+}
+
+.card1 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    border: 1px #8C0B16;
+    background-color: #8C0B16;
+}
+
+.logo {
+    margin-top: 2px;
+    width: 140px;
+    height: 145px;
+    margin-left: 590px;
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container img {
+    width: 380px;
+    height: auto;
+    margin-right: 70px;
+    margin-left: 180px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+    display: block;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+.container .text {
+    width: 500px;
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background: url(phon.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card2 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    border: 1px #8C0B16;
+    background-color: #8C0B16;
+    margin-top: 20px;
+}
+
+.nelogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 300px;
+    font-size: 42px;
+    color: black;
+}
+
+.threeimg {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.threeimg img {
+    width: 360px;
+    height: 480px;
+    max-width: 100%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+    display: block;
+}
+
+.threeimg img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 30px;
+    height: auto;
+    background-color: #8C0B16;
+    color: black;
+    display: flex;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+footer .column1 {
+    margin-left: 300px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .column2 {
+    margin-left: 200px;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.f {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: #000000;
+    margin-left: -310px;
+    margin-top: 125px;
+}
+
+.s1 {
+    color: black;
+}
+
+.social {
+    display: flex;
+}
+
+.sociali a {
+    margin: 0 10px;
+}
+
+.sociali img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.socali a:hover img {
+    transform: scale(1.2);
+}
+
+.conteiner404 img{
+    width: 800px;
+    height: auto;
+    margin-left:50px; 
+    padding: 10px;
+    margin-top: 10px;
+}
+.page-header{
+    margin-left:150px;
+    font-size: 25px;
+}
+.container img{
+    animation: move2 0.7s ease-in-out;
+}
+@keyframes move2
+{
+    0%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+
+.container .text{
+    animation: move3 0.7s ease-in-out;
+}
+@keyframes move3
+{
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        padding: 5px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 100px;
+        height: auto;
+    }
+    .card1 {
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .container img {
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .container .text {
+        width: 95%;
+        padding: 5px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .card2 {
+        width: 100%;
+        margin-top: 5px;
+        height: auto;
+    }
+
+    .nelogo {
+        font-size: 18px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    .threeimg {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .threeimg img {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .conteiner404 img{
+        width: 40px;
+        height: auto;
+        margin-left: 0; 
+        margin-top: 5px;
+    }
+    .page-header{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+
+    footer {
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    footer .column1, footer .column2 {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .f{
+    margin-top: 10px;
+    margin-left: 13px;
+    }
+
+    footer .sociali a {
+        margin: 5px;
+    }
+
+    .sociali img {
+        width: 24px;
+        height: 24px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        padding: 5px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 16px; 
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 120px; 
+        height: auto;
+    }
+
+    .card1{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .container img {
+        width: 60%;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+
+    .container .text {
+        width: 95%;
+        padding: 5px;
+        text-align: left;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .card2 {
+        width: 100%;
+        margin-top: 5px;
+        height: auto;
+    }
+
+    .nelogo {
+        font-size: 20px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    .threeimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .threeimg img {
+        width: 60%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        margin-top: 5px;
+    }
+
+    footer .column1, footer .column2 {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .f{
+        margin-top: 10px;
+        margin-left: 13px;
+        }
+
+    .sociali img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        padding: 5px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 100px; 
+        height: auto;
+    }
+
+    .card1 {
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .container img {
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .container .text {
+        width: 95%;
+        padding: 5px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .card2 {
+        width: 100%;
+        margin-top: 5px;
+        height: auto;
+    }
+
+    .nelogo {
+        font-size: 18px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    .threeimg {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       margin-top: 10px;
+    }
+
+    .threeimg img {
+        width: 60%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .conteiner404 img{
+        width: 400px;
+        height: auto;
+        margin-left: 110px; 
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .page-header{
+        margin-left: 150px;
+        font-size: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+       align-items: center;
+        padding: 20px;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    footer .column1, footer .column2 {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .f{
+        margin-top: 10px;
+        margin-left: 13px;
+        }
+
+    .sociali img {
+        width: 24px;
+        height: 24px;
+    }
+}
